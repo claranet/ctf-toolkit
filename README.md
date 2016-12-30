@@ -1,55 +1,27 @@
 # ctf-toolkit
-A toolkit for CTF challenges
+A toolkit collection for CTF challenges
 
-## Categories
-### WEB
-Name | URL 
------------------------------------- | ---------------------------------------------
-Burpsuite | https://portswigger.net/burp/
-Zap | https://www.owasp.org/index.php/OWASP_Zed_Attack_Proxy_Project
-Nikto | https://github.com/sullo/nikto
-Sqlmap | http://sqlmap.org/
-Wfuss | http://www.edge-security.com/wfuzz.php
+Each security domain has its own folder containing:
+- a reference **README.MD**
+- any files/scripts we deemed useful
 
-### FORENSICS
+## CTF environment setup
 
-Name | URL 
------------------------------------- | ---------------------------------------------
-Foremost | https://doc.ubuntu-fr.org/foremost
-Binwalk | https://github.com/devttys0/binwalk
-Photorec | http://www.cgsecurity.org/wiki/PhotoRec_FR
-TestDisk | http://www.cgsecurity.org/wiki/TestDisk
-DD_rescue | https://doc.ubuntu-fr.org/ddrescue
-Scalpel | https://github.com/sleuthkit/scalpel
-Exiftool | http://www.sno.phy.queensu.ca/~phil/exiftool/
-Volatility | www.volatilityfoundation.org
+we strongly suggest using the kali distribution https://www.kali.org/
 
-### REVERSE ENGINEERING
+For **windows** follow these steps:
+1 - install [VMware Workstation Player](http://www.vmware.com/go/tryplayerpro-win-64-fr)
+2 - pick up an existing Kali image for VMWare, for example through [osboxes.org](http://www.osboxes.org/kali-linux/)
+3 - create a VM using the provided image
+4 - configure the correct os type (debian) for the VM through settings > advanced
+5 - connect with credentials, remember to watch for qwerty keyboards
+    - kali: root/toor
+    - osboxes.org: root/osboxes.org
+6 - install and configure the vmware tools on the running image (this enables fullscreen, copy/paste and other good stuff)
+    - copy the cd media to any folder with read/write perms
+    - unpack the vmwaretool archive
+    - execute the perl script in the unpacked archive and leave most options to default **CAREFUL: you may want to think twice about sharing files & network with the host machine for malware CTF challenges**
+7 - stop the running VM and enable hardware acceleration through the VM settings' menu
+8 - enjoy and go fetch some flags!
 
-Name | URL
------------------------------------- | ---------------------------------------------
-JD GUI (Java decompiler) | https://github.com/java-decompiler/jd-gui
-Reflexil (.NET assembly editor) | http://reflexil.net/
-.NET Reflector (.NET desassembly) | http://www.red-gate.com/products/dotnet-development/reflector/
-
-### STEGANO
-Name | URL 
------------------------------------- | ---------------------------------------------
-xxd | http://linuxcommand.org/man_pages/xxd1.html
-hxd | https://mh-nexus.de/en/hxd/
-Binwalk | https://github.com/devttys0/binwalk
-Hachoir | https://bitbucket.org/haypo/hachoir/wiki/Home
-Steganabra | https://www.wechall.net/fr/download/14/steganabara_1_1_1_jar
-
-
-### NETWORK
-Name | URL 
------------------------------------- | ---------------------------------------------
-Wireshark | https://www.wireshark.org/
-Tshark | https://www.wireshark.org/
-
-
-### MISC
-Name | URL 
------------------------------------- | ---------------------------------------------
-Hash-Identifier | http://tools.kali.org/password-attacks/hash-identifier
+For **linux** well ... you know what to do :) !
