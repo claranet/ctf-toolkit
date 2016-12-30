@@ -24,6 +24,13 @@ Scalpel | https://github.com/sleuthkit/scalpel
 Exiftool | http://www.sno.phy.queensu.ca/~phil/exiftool/
 Volatility | www.volatilityfoundation.org
 
+### REVERSE ENGINEERING
+
+Name | URL
+------------------------------------ | ---------------------------------------------
+JD GUI (Java decompiler) | https://github.com/java-decompiler/jd-gui
+Reflexil (.NET assembly editor) | http://reflexil.net/
+.NET Reflector (.NET desassembly) | http://www.red-gate.com/products/dotnet-development/reflector/
 
 ### STEGANO
 Name | URL 
